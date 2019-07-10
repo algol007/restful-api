@@ -1,0 +1,11 @@
+{
+  "name": "restful-api",
+  "version": "1.0.0",
+  "description": "Restful API with Node.js",
+  "main": "index.js",
+  "author": "Ady Rahmansyah",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
