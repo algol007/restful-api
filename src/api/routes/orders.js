@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
     res.status(200).json({
-        message: 'Orders were fetched'
+        message: 'Orders were fetched!!!'
     });
 });
 
@@ -15,15 +15,20 @@ router.post('/', (req, res, next) => {
 
 router.get('/:orderId', (req, res, next) => {
     res.status(200).json({
-        message: 'Order details',
+        message: 'Fetched product!',
         orderId: req.params.orderId
+    });
+});
+
+router.patch('/:orderId', (req, res, next) => {
+    res.status(200).json({
+        message: 'Updated product!'
     });
 });
 
 router.delete('/:orderId', (req, res, next) => {
     res.status(200).json({
-        message: 'Deleted order',
-        orderId: req.params.orderId
+        message: 'Deleted product!'
     });
 });
 

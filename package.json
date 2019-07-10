@@ -5,7 +5,13 @@
   "main": "index.js",
   "author": "Ady Rahmansyah",
   "license": "MIT",
+  "scripts": {
+    "dev": "NODE_PATH=. nodemon --exec \"node server.js\""
+  },
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
